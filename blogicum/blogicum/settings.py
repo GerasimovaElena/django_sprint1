@@ -25,13 +25,13 @@ SECRET_KEY = 'django-insecure-3sjf+8y4!m4-nj#^fjy)9#!_a34-(ce992n!ho8&%pljq-mmn3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'pages.apps.PagesConfig', 
+    'pages.apps.PagesConfig',
     'blog.apps.BlogConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -123,9 +123,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    BASE_DIR / 'static_dev',
-    ]
+STATICFILES_DIRS = [BASE_DIR / 'static_dev']
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
