@@ -55,7 +55,7 @@ def post_detail(request, post_id):
     for post in posts:
         if post['id'] == post_id:
             context = {'post': post}
-    return render(request, template, context)
+            return render(request, template, context)
 
 
 def category_posts(request, category_slug):
